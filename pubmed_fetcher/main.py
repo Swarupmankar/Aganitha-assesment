@@ -77,7 +77,7 @@ def main():
             print_info(f"Saving results to: {args.file}")
 
         print_info("Searching PubMed...")
-        pmids = search_pubmed(query, api_key, retmax=50)
+        pmids = search_pubmed(query, api_key, retmax=10)
 
         print_info(f"Fetching details for {len(pmids)} articles...")
         articles = fetch_details(pmids, api_key)
