@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PubMed Fetcher
 
 Fetches PubMed articles with non-academic authors and exports details to CSV.
@@ -23,3 +24,6 @@ Defualt it will fetch 50 results in 1 csv file if there are any
 
 Result (csv file) will store in root folder as pubmed_result.csv
 
+=======
+# Aganitha-assesment
+>>>>>>> a200738c0799133db6c8a3d7626213697b790371
