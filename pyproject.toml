@@ -1,0 +1,26 @@
+
+[tool.poetry]
+name = "pubmed_fetcher"
+version = "0.1.0"
+description = "Fetch PubMed data and extract non-academic author info"
+authors = ["Swarup <mankar04@gmail.com>"]
+packages = [{ include = "pubmed_fetcher" }]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+xmltodict = "^0.13.0"
+rich = "^14.0.0"
+python-dotenv = "^0.21.0"
+docutils = "<0.18"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_fetcher.main:main"
+
+[tool.poetry.group.dev.dependencies]
+twine = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
